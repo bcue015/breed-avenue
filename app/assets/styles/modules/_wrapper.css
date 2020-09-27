@@ -2,48 +2,25 @@
 	overflow: hidden;
 	padding-right: 18px;
 	padding-left: 18px;
-	max-width: 1236px;
+	max-width: 1136px;
 	margin-left: auto;
 	margin-right: auto;
 
-	&--narrow {
-		max-width: 470px;
-	}
-
-	&--medium {
-		max-width: 976px;
-	}
-
-	&--b-margin {
-		margin-bottom: 1rem;
-
-		@mixin atSmall {
-			margin-bottom: 3.875rem;
-		}
-	}
-
-	&--no-padding-until-medium {
-		padding-left: 0;
-		padding-right: 0;
+	&--site-header-flex {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 
 		@mixin atMedium {
-			padding-right: 18px;
-			padding-left: 18px;
+			flex-direction: row;
 		}
 	}
+	
 
-	&--no-padding-until-large {
-		padding-left: 0;
-		padding-right: 0;
-
-		@mixin atLarge {
-			padding-right: 18px;
-			padding-left: 18px;
-		}
-	}
-
-	.wrapper {
-		padding-left: 0;
-		padding-right: 0;
+	&--flex {
+		height: 660px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }

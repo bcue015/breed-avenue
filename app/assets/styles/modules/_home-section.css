@@ -1,0 +1,11 @@
+.home-section {
+	background-color: $mainDark;
+	text-align: center;
+
+	&__title {
+		color: white;
+		font-size: 3rem;
+		font-weight: 300;
+	}
+
+}

@@ -1,0 +1,30 @@
+.dog-section {
+	background-color: $mainBlue;
+
+	&__title {
+		font-size: 5.6rem;
+		font-weight: 300;
+		margin-top: 2rem;
+		margin-bottom: 1.876rem;
+		color: white;
+		text-align: center;
+
+		@mixin atMedium {
+			text-align: left;
+			margin-top: 0;
+		}
+	}
+
+	&__subtitle {
+		font-size: 2rem;
+		font-weight: 300;
+		margin-bottom: 1.876rem;
+		line-height: 3rem;
+		color: white;
+	}
+	
+	&__img {
+		border-radius: 50%;
+		border: 20px solid white;
+	}
+}

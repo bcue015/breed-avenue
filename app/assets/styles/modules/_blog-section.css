@@ -1,0 +1,35 @@
+.blog-section {
+
+	&__title {
+		font-weight: 400;
+		font-size: 5rem;
+		text-transform: uppercase;
+		text-align: center;
+		color: $mainDark;
+		margin-bottom: 5rem;
+	}
+
+	&__the-btn {
+		text-align: center;
+		margin: 5rem;
+	}
+
+	&__btn {
+		text-align: center;
+		font-size: 1.7rem;
+		color: $mainBlue;
+		text-decoration: none;
+		border-bottom: 1px solid $mainBlue;
+		display: inline-block;
+		padding: 3px;
+		transition: all .3s ease-out;
+
+		&:hover {
+			color: white;
+			background-color: $mainBlue;
+			transform: translateY(-.1rem) scale(1.1);
+		}
+	}
+
+}
+
