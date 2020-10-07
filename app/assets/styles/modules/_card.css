@@ -2,15 +2,6 @@
 	border: 1px solid #dfe0e0;
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 
-	/*
-	transition: transform .3s;
-
-	&:hover {
-		transform: translateY(-2.5rem) scale(1.03);
-	}
-
-	*/
-
 	&__content {
 		padding: 0 1rem;
 	}

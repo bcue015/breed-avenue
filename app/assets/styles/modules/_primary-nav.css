@@ -1,6 +1,5 @@
 .primary-nav {
 
-
 	@mixin atMedium {
 		display: block;
 	}
