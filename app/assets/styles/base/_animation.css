@@ -31,3 +31,13 @@
 		opacity: 1;
 	}
 }
+
+@keyframes moveInUpward {
+  0% {
+    transform: translateY(100rem);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

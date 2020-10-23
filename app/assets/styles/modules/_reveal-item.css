@@ -1,11 +1,11 @@
 .reveal-item {
 	opacity: 0;
-	transition: all .3s ease-out;
-	transform: translateY(4rem);
+	transition: opacity .9s ease-out;
 
 	&--is-visible {
 		opacity: 1;
-		transform: translateY(0);
+		animation: moveInUpward .9s ease-out;
+		animation-timing-function: cubic-bezier(.12,.81,0,.94);
 	}
 }
 
