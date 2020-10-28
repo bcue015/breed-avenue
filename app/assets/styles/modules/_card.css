@@ -40,5 +40,14 @@
 		margin: 2rem 0;
 		font-size: 1.6rem;
 		line-height: 2rem;
+
+		& a {
+			color: $mainBlue;
+			text-decoration: none;
+
+			&:hover {
+				color: $muted;
+			}
+		}
 	}
 }

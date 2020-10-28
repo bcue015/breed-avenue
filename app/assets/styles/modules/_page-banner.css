@@ -1,0 +1,179 @@
+.page-banner {
+	height: 400px;	
+	background: url(../../assets/images/blog-banner1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0 -5rem;
+	position: relative;
+
+	@mixin atMedium {
+		background-position: 0 -10rem;
+	}
+
+	@mixin atLarge {
+		background-position: 0 -20rem;
+	}
+
+	@mixin atExtraLarge {
+		background-position: 0 -30rem;
+	}
+
+	&--cat {
+		background: url(../../assets/images/cat-banner1.jpg);
+		background-size: cover;
+		position: relative;
+
+		@mixin atExtraLarge {
+			background-position: 0 -17rem;
+		}
+	}
+
+	&--dog {
+		background: url(../../assets/images/dog-banner.jpg);
+		background-size: cover;
+		position: relative;
+
+		@mixin atExtraLarge {
+			background-position: 0 -17rem;
+		}
+	}
+
+	&--other-pets {
+		background: url(../../assets/images/other-pets-banner1.jpg);
+		background-size: cover;
+		position: relative;
+
+		@mixin atExtraLarge {
+			background-position: 0 -7rem;
+		}
+	}
+
+	&__overlay {
+		position: absolute;
+		left: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, .83);
+		height: 400px;
+		width: 100%;
+	}
+
+	&__trigger {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 300px;
+	}
+}
+
+.page-title {
+	text-align: center;
+			animation: revealOpacity .9s,
+			popOut 1000ms linear .9s;
+			-webkit-animation: revealOpacity .9s,
+			popOut 1000ms linear .9s;
+
+	&__photo {
+		position: relative;
+		top: -20rem;
+		margin-bottom: -20rem;
+		overflow: hidden;
+		padding-right: 18px;
+		padding-left: 18px;
+
+		@mixin atMedium {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+
+	&__img {
+		border-radius: 20rem;
+	}
+
+	&__title {
+		font-size: 5rem;
+		font-weight: 900;
+		color: $mainDark;
+		margin: 0;
+		letter-spacing: -.2rem;
+	}
+
+	&__description {
+		font-size: 2rem;
+		font-weight: 400;
+		color: $mainDark;
+		margin: 1.5rem 0;
+	}
+
+	&__author {
+		font-size: 1.7rem;
+		color: #5e5d5e;
+	}
+}
+
+.page-post {
+
+	&__hr {
+		margin-bottom: 6rem;
+	}
+
+	&__title {
+		text-align: center;
+		font-size: 4rem;
+		font-weight: 300;
+		margin-bottom: 4rem;
+		color: $mainDark;
+
+		@mixin atExtraSmall {
+			font-size: 5rem;
+		}
+
+		@mixin atMedium {
+			font-size: 6rem;
+		}
+	}
+}
+
+.pagination {
+	margin-top: 5rem;
+
+	& ol {
+		display: flex;
+		justify-content: center;
+	}
+
+	& li {
+		list-style-type: none;
+		
+		&:not(:last-child) {
+			border-left: 1px solid #d7d7d7;
+			border-top: 1px solid #d7d7d7;
+			border-bottom: 1px solid #d7d7d7;
+		}
+
+		&:last-child {
+			border: 1px solid #d7d7d7;
+		}
+
+		&.active a {
+			background-color: $mainBlue;
+			color: white;
+			border: none;
+
+		}
+	}
+
+	& a {
+		color: $mainBlue;
+		text-decoration: none;
+		display: inline-block;
+		padding: 1rem 1rem;
+		font-size: 1.6rem;
+		transition: background-color .2s ease-out;
+
+		&:hover {
+			background-color: #d7d7d7;
+		}
+	}
+}

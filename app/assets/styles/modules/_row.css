@@ -9,6 +9,10 @@
 		}
 	}
 
+	&--margin-vertical {
+		margin-bottom: 2rem;
+	} 
+
 	&--align-y-start {
 		align-items: start;
 	}

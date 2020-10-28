@@ -1,11 +1,276 @@
 .reveal-item {
 	opacity: 0;
-	transition: opacity .9s ease-out;
+
+	& .home-section__title {
+		opacity: 0;
+	}
+	
+	& .cat-section__title {
+		opacity: 0;
+	
+	}
+
+	& .cat-section__subtitle {
+		opacity: 0;
+	
+	}
+
+	& .cat-btn {
+		opacity: 0;
+	
+	}
+
+	& .cat-section__img {
+		opacity: 0;
+	}
+
+	& .dog-section__title {
+		opacity: 0;
+	
+	}
+
+	& .dog-section__subtitle {
+		opacity: 0;
+	
+	}
+
+	& .dog-btn {
+		opacity: 0;
+	
+	}
+
+	& .dog-section__img {
+		opacity: 0;
+	}
+
+	& .other-pets-section__title {
+		opacity: 0;
+	
+	}
+
+	& .other-pets-section__subtitle {
+		opacity: 0;
+	
+	}
+
+	& .other-pets-btn {
+		opacity: 0;
+	
+	}
+
+	& .other-pets-section__img {
+		opacity: 0;
+	}
+
+	& .blog-section__title {
+		opacity: 0;
+	}
+
+	& .card-one, & .card-two, & .card-three, & .card-four, & .card-five, & .card-six, & .card-seven, & .card-eight, & .card-nine {
+		opacity: 0;
+	}
+
+	& .footer-one, & .footer-two, & .footer-three, & .footer-four, & .footer-five {
+		opacity: 0;
+	}
+
+	& .pagination {
+		opacity: 0;
+	}
 
 	&--is-visible {
 		opacity: 1;
 		animation: moveInUpward .9s ease-out;
 		animation-timing-function: cubic-bezier(.12,.81,0,.94);
+
+		& .home-section__title {
+			opacity: 1;
+			animation: moveInUpward 1.4s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .cat-section__title {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .cat-section__subtitle {
+			opacity: 1;
+			animation: moveInUpward 1.3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .cat-btn {
+			opacity: 1;
+			animation: moveInUpward 1.5s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .cat-section__img {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+
+			@mixin atMedium {
+				animation: moveInUpward 1.5s ease-out;
+				animation-timing-function: cubic-bezier(.12,.81,0,.94);
+			}
+		}
+
+		& .dog-section__title {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .dog-section__subtitle {
+			opacity: 1;
+			animation: moveInUpward 1.3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .dog-btn {
+			opacity: 1;
+			animation: moveInUpward 1.5s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .dog-section__img {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+
+			@mixin atMedium {
+				animation: moveInUpward 1.5s ease-out;
+				animation-timing-function: cubic-bezier(.12,.81,0,.94);
+			}
+		}
+
+		& .other-pets-section__title {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .other-pets-section__subtitle {
+			opacity: 1;
+			animation: moveInUpward 1.3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .other-pets-btn {
+			opacity: 1;
+			animation: moveInUpward 1.5s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .other-pets-section__img {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+
+			@mixin atMedium {
+				animation: moveInUpward 1.5s ease-out;
+				animation-timing-function: cubic-bezier(.12,.81,0,.94);
+			}
+		}
+
+		& .blog-section__title {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-one {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-two {
+			opacity: 1;
+			animation: moveInUpward 1.3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-three {
+			opacity: 1;
+			animation: moveInUpward 1.5s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-four {
+			opacity: 1;
+			animation: moveInUpward 1.8s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-five {
+			opacity: 1;
+			animation: moveInUpward 2.1s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-six {
+			opacity: 1;
+			animation: moveInUpward 2.4s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-seven {
+			opacity: 1;
+			animation: moveInUpward 2.7s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-eight {
+			opacity: 1;
+			animation: moveInUpward 3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .card-nine {
+			opacity: 1;
+			animation: moveInUpward 3.3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .footer-one {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .pagination {
+			opacity: 1;
+			animation: moveInUpward 3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .footer-two {
+			opacity: 1;
+			animation: moveInUpward 1.3s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .footer-three {
+			opacity: 1;
+			animation: moveInUpward 1.5s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .footer-four {
+			opacity: 1;
+			animation: moveInUpward 1.8s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .footer-five {
+			opacity: 1;
+			animation: moveInUpward 2.1s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
 	}
 }
 
