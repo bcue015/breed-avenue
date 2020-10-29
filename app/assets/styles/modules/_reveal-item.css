@@ -78,6 +78,16 @@
 		opacity: 0;
 	}
 
+	& .page-about__content {
+		opacity: 0;
+	}
+
+	& .page-about__photo {
+		@mixin atMedium {
+			opacity: 0;
+		}
+	}
+
 	&--is-visible {
 		opacity: 1;
 		animation: moveInUpward .9s ease-out;
@@ -234,6 +244,20 @@
 			opacity: 1;
 			animation: moveInUpward 3.3s ease-out;
 			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .page-about__content {
+			opacity: 1;
+			animation: moveInUpward .9s ease-out;
+			animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+		& .page-about__photo {
+			@mixin atMedium {
+				opacity: 1;
+				animation: moveInUpward 1.8s ease-out;
+				animation-timing-function: cubic-bezier(.12,.81,0,.94);
+			}
 		}
 
 		& .footer-one {

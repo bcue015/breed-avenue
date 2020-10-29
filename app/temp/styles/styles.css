@@ -659,6 +659,10 @@ body {
 	}
 	}
 
+.row--vertical-center {
+		justify-content: center;
+	}
+
 .row--margin-vertical {
 		margin-bottom: 2rem;
 	}
@@ -702,6 +706,17 @@ body {
 	}
 	}
 
+.col-md-4--at-small:not(:last-child) {
+  	margin-bottom: 12rem;
+  	}
+
+@media (min-width: 768px) {
+
+.col-md-4--at-small:not(:last-child) {
+	  		margin-bottom: 0
+  	}
+	}
+
 .col-md-3 {
 		width: 100%;
 	}
@@ -733,6 +748,10 @@ body {
 
 		.col-md-3 {
 			width: 25%;
+		}
+
+		.col-md-6 {
+			width: 50%;
 		}
 	}
 
@@ -872,6 +891,17 @@ Instead edit templates/sprite	*/
 
 .reveal-item .pagination {
 		opacity: 0;
+	}
+
+.reveal-item .page-about__content {
+		opacity: 0;
+	}
+
+@media (min-width: 768px) {
+
+.reveal-item .page-about__photo {
+			opacity: 0
+	}
 	}
 
 .reveal-item--is-visible {
@@ -1095,6 +1125,25 @@ Instead edit templates/sprite	*/
 			-webkit-animation-timing-function: cubic-bezier(.12,.81,0,.94);
 			        animation-timing-function: cubic-bezier(.12,.81,0,.94);
 		}
+
+.reveal-item--is-visible .page-about__content {
+			opacity: 1;
+			-webkit-animation: moveInUpward .9s ease-out;
+			        animation: moveInUpward .9s ease-out;
+			-webkit-animation-timing-function: cubic-bezier(.12,.81,0,.94);
+			        animation-timing-function: cubic-bezier(.12,.81,0,.94);
+		}
+
+@media (min-width: 768px) {
+
+.reveal-item--is-visible .page-about__photo {
+				opacity: 1;
+				-webkit-animation: moveInUpward 1.8s ease-out;
+				        animation: moveInUpward 1.8s ease-out;
+				-webkit-animation-timing-function: cubic-bezier(.12,.81,0,.94);
+				        animation-timing-function: cubic-bezier(.12,.81,0,.94)
+		}
+	}
 
 .reveal-item--is-visible .footer-one {
 			opacity: 1;
@@ -1612,6 +1661,17 @@ Instead edit templates/sprite	*/
 	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
+.card--bg-blue {
+		background-color: #52a4fc;
+	}
+
+@media (min-width: 768px) {
+
+.card--bg-blue {
+			margin-bottom: 1rem
+	}
+	}
+
 .card__content {
 		padding: 0 1rem;
 	}
@@ -1630,6 +1690,13 @@ Instead edit templates/sprite	*/
 				color: #007bff;
 			}
 
+.card__title--author-page {
+			text-align: center;
+			font-weight: 400;
+			margin: 2rem 0 1rem 0;
+			color: #343a40;
+		}
+
 .card__author {
 		font-size: 1.4rem;
 		color: #6c757d;
@@ -1644,6 +1711,13 @@ Instead edit templates/sprite	*/
 .card__author a:hover {
 				color: #007bff;
 			}
+
+.card__author--author-page {
+			text-align: center;
+			font-size: 2rem;
+			color: white;
+			margin: 1rem 0;
+		}
 
 .card__text {
 		color: #343a40;
@@ -1661,9 +1735,46 @@ Instead edit templates/sprite	*/
 				color: #6c757d;
 			}
 
+.card__text--author-page {
+			text-align: center;
+			font-size: 1.6rem;
+			color: #d6e9fd;
+		}
+
+.card__photo {
+		width: 20rem;
+		height: 20rem;
+		overflow: hidden;
+		border-radius: 10rem;
+		margin: 0 auto;
+		position: relative;
+		top: -10rem;
+		margin-bottom: -10rem;
+		border: 10px solid #94c7fd;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	}
+
+.card__photo img {
+
+		}
+
+.card__social-icons {
+		margin: 2rem 0;
+		display: flex;
+		justify-content: center;
+	}
+
+.card__social-icons a:not(:last-child) {
+				margin-right: 2rem;
+			}
+
+.card__social-icons span {
+			display: block;
+		}
+
 .page-banner {
 	height: 400px;	
-	background: url(../../assets/images/blog-banner1.jpg);
+	background: url(../../assets/images/blog-banner2a.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 -5rem;
@@ -1687,7 +1798,7 @@ Instead edit templates/sprite	*/
 @media (min-width: 1199px) {
 
 .page-banner {
-		background-position: 0 -30rem
+		background-position: 0 -25rem
 }
 	}
 
@@ -1730,6 +1841,19 @@ Instead edit templates/sprite	*/
 	}
 	}
 
+.page-banner--about {
+		background: url(../../assets/images/about-banner2a.jpg);
+		background-size: cover;
+		position: relative;
+	}
+
+@media (min-width: 1199px) {
+
+.page-banner--about {
+			background-position: 0 -27rem
+	}
+	}
+
 .page-banner__overlay {
 		position: absolute;
 		left: 0;
@@ -1737,6 +1861,7 @@ Instead edit templates/sprite	*/
 		background-color: rgba(0, 0, 0, .83);
 		height: 400px;
 		width: 100%;
+
 	}
 
 .page-banner__trigger {
@@ -1745,6 +1870,84 @@ Instead edit templates/sprite	*/
 		right: 0;
 		width: 100%;
 		height: 300px;
+	}
+
+.page-banner__content {
+		padding-top: 17rem;
+	}
+
+.page-banner__title {
+		color: #94c7fd;
+		font-size: 5rem;
+		margin: 0;
+		font-weight: 600;
+		-webkit-animation: moveInLeft 1s ease-out;
+		        animation: moveInLeft 1s ease-out;
+	}
+
+@media (min-width: 319px) {
+
+.page-banner__title {
+			font-size: 5rem
+	}
+	}
+
+@media (min-width: 530px) {
+
+.page-banner__title {
+			font-size: 8rem
+	}
+	}
+
+.page-about__photo {
+		text-align: center;
+		display: none;
+	}
+
+@media (min-width: 768px) {
+
+.page-about__photo {
+			display: block
+	}
+	}
+
+.page-about__img {
+		border-radius: 50%;
+		box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+	}
+
+.page-about__content p {
+			font-size: 1.6rem;
+			font-weight: 400;
+			color: #343a40;
+			line-height: 1.4;
+		}
+
+.page-about__content p:not(:last-child) {
+				margin-bottom: 2rem;
+			}
+
+.page-about__title {
+		font-size: 4rem;
+		margin: 0;
+		color: #343a40;
+		margin-bottom: 2rem;	
+	}
+
+.page-about__hr {
+		margin-bottom: 2rem;	
+	}
+
+.page-authors__title {
+		font-size: 4rem;
+		margin: 0;
+		color: #343a40;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+.page-authors__hr {
+		margin-bottom: 13rem;	
 	}
 
 .page-title {
