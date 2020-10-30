@@ -1770,6 +1770,7 @@ Instead edit templates/sprite	*/
 
 .card__social-icons span {
 			display: block;
+			transform: scale(.7);
 		}
 
 .page-banner {
